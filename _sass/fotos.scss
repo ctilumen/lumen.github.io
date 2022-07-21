@@ -165,7 +165,8 @@
     a{
         padding-left: 0;
         padding-right: 0;
-        width: 90px;
+        margin-top: 20px;
+        margin-bottom: 10px;
 
            @media (max-width: 992px){
            width: 310px;
@@ -173,69 +174,38 @@
               }
 
 
-           @media (max-width: 736px){
-           width: 310px;
-           text-align: center;
+           @media (max-width: 768px){
+            display: inline-block;
+             text-align: center;
+             margin-left: 100px;
+             background: center;
               }
 
 
-           @media (max-width: 678px){
-           width: 269px;
-           text-align: center;
-           }
 
-
-            @media (max-width: 574px){
-           width: 198px;
-           text-align: center;
-           margin-left: 25px;
-           }
-
-
-            @media (max-width: 491px){
-           width: 156px;
-           text-align: center;
-           margin-left: 28px;
-           }
-
-
-            @media (max-width: 491px){
-           width: 156px;
-           text-align: center;
-           margin-left: 28px;
+            @media (max-width: 425px){
+                display: block;
+                 margin-left: 90px;
+                text-align: center;
            }
 
 
 
-            @media (max-width: 438px){
-           width: 156px;
+            @media (max-width: 375px){
            text-align: center;
-           margin-left: 11px;
+           margin-left: 65px;
            }
 
 
-
-            @media (max-width: 381px){
-           width: 139px;
+           @media (max-width: 320px){
+           margin-left: 50px;
            text-align: center;
-           margin-left: 5px;
-           }
-
-
-           @media (max-width: 328px){
-           width: 120px;
-           text-align: center;
-           }
-
-
-            @media (max-width: 290px){
-           text-align: center;
-           margin-left: -2px;
            }
 
     }
     
 }
+
 .btn-galery{
     background: #0063b3;
     color: #fff;
