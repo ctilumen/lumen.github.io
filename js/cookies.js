@@ -1,3 +1,36 @@
+// --- Config --- //
+var purecookieTitle = "Utilização de Cookies"; // Title
+var purecookieDesc = "Ao usar este site, você aceita automaticamente que usamos cookies."; // Description
+var purecookieButton = "Concordo"; // Button text
+// ---        --- //
+
+
+function pureFadeIn(elem, display){
+  var el = document.getElementById(elem);
+  el.style.opacity = 0;
+  el.style.display = display || "block";
+
+  (function fade() {
+    var val = parseFloat(el.style.opacity);
+    if (!((val += .02) > 1)) {
+      el.style.opacity = val;
+      requestAnimationFrame(fade);
+    }
+  })();
+};
+function pureFadeOut(elem){
+  var el = document.getElementById(elem);
+  el.style.opacity = 1;
+
+  (function fade() {
+    if ((el.style.opacity -= .02) < 0) {
+      el.style.display = "none";
+    } else {
+      requestAnimationFrame(fade);
+    }
+  })();
+};
+
 function setCookie(name,value,days) {
     var expires = "";
     if (days) {
@@ -17,36 +50,20 @@ function getCookie(name) {
     }
     return null;
 }
-
-function eraseCookie(name) {   
-    document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+function eraseCookie(name) {
+    document.cookie = name+'=; Max-Age=-99999999;';
 }
 
 function cookieConsent() {
-    if (!getCookie('allowCookies')) {
-        $('.toast').toast('show')
-    }
+  if (!getCookie('purecookieDismiss')) {
+    document.body.innerHTML += '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>' + purecookieTitle + '</a></div><div class="cookieDesc"><p>' + purecookieDesc + ' ' + '</p></div><div class="cookieButton" style="text-align: center;"><a onClick="purecookieDismiss();">' + purecookieButton + '</a></div></div>';
+    pureFadeIn("cookieConsentContainer");
+  }
 }
 
-$('#btnDeny').click(()=>{
-    eraseCookie('allowCookies')
-    $('.toast').toast('hide')
-})
+function purecookieDismiss() {
+  setCookie('purecookieDismiss','1',7);
+  pureFadeOut("cookieConsentContainer");
+}
 
-$('#btnAccept').click(()=>{
-    setCookie('allowCookies','1',7)
-    $('.toast').toast('hide')
-})
-
-// load
-cookieConsent()
-
-// for demo / testing only
-$('#btnReset').click(()=>{
-    // clear cookie to show toast after acceptance
-    eraseCookie('allowCookies')
-    $('.toast').toast('show')
-})
-
-
-
+window.onload = function() { cookieConsent(); };
