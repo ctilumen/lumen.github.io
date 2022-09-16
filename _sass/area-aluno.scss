@@ -738,7 +738,7 @@ font-weight: bold;
 
 
     img{
-    @media (max-width: 1024px){
+            @media (max-width: 1024px){
                 width: 330px;
                padding: 0px;
                }
@@ -754,13 +754,41 @@ font-weight: bold;
 
                 @media (max-width: 425px){
                padding: 0px;
+               margin-top: 5px;
                }
+        }
 
 
-                @media (max-width: 320px){
-               padding: 0px;
-               }
 }
 
 
+.iframe{
+    margin-top: 130px;
+    text-align: center;
+}
+.iframe iframe{
+    width:900px; 
+    height: 1824px;
+
+    @media (max-width: 768px){
+        width:744px; 
+        }
+
+        @media (max-width: 425px){
+            margin-top: 10px;
+            width:408px; 
+            height: 2005px;
+            }
+
+            @media (max-width: 375px){
+                margin-top: -80px;
+                width:360px; 
+                height: 2070px;
+                }
+
+                @media (max-width: 320px){
+                    margin-top: -80px;
+                    width:304px; 
+                    height: 2180px;
+                    }
 }
