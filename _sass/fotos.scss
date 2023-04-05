@@ -319,18 +319,34 @@
     
 }
 
+
+
+.display h2{
+    display: block;
+    text-align: center;
+    color: #fff;
+    background-color: #0063b3;
+    border: 3px solid orange;
+    border-radius: 10px;
+    font: 700 30px/1 'Roboto Condensed', sans-serif;
+    margin-bottom: 0;
+    width: max-content;
+    padding: 0 15px;
+    }
+
+
 .display ul{
     display: grid;
     list-style: none;
     grid-template-areas: 
     "li li li li";
     justify-content: center;
-    h2{
-        color: #0063b3;
-    }
+    
+
     a{
         text-decoration: none;
     }
+
     p{
         margin-top: 5px;
         text-align: center;
