@@ -39,12 +39,7 @@
     height: 205px;
   }
 
-@media(max-width: 768px){
-  .example-image{
-    width: 140px;
-    height: 140px;
-  }
-}
+
     
   .lightbox a img {
     display: block;
