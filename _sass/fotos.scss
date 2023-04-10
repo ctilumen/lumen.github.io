@@ -344,17 +344,17 @@
 .display h2{
     display: block;
     text-align: center;
+    margin: 0px 0px 10px 0px;
     
-    padding: 0 15px;
     }
 
     .display h2 font{
         color: #fff;
     background-color: #0063b3;
-    border: 3px solid orange;
-    border-radius: 10px;
+    margin-bottom: 1000px;
+    border-bottom: 4px solid orange;
+    padding: 2px 10px;
     font: 700 25px/1 'Roboto Condensed', sans-serif;
-    padding: 2px;
     }
 
 .display ul{
@@ -386,6 +386,11 @@
             "li li li";
             }
     
+    @media(max-width: 680px) { 
+        justify-content:space-around;
+        grid-template-areas: 
+            "li li";
+        }
     
     @media(max-width: 610px) { 
         justify-content:space-around;
@@ -396,4 +401,21 @@
     
 }
 
+.vejaoquefiz{
+    color: #0063b3;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 33px;
 
+    @media(max-width: 991px) {
+        font-size: 30px;
+    }
+    
+    @media(max-width: 680px) { 
+        font-size: 25px;
+        }
+    
+    @media(max-width: 610px) { 
+        font-size: 22px;
+        }
+}

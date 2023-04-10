@@ -28,11 +28,9 @@
         text-decoration: none;
         
        &:hover, &:focus{
-         border-top: 3px solid #ff8c40;
-         transition: all 200ms ease-out;
-         text-decoration: none;
-         color: #fff; 
-         background: blue;
+            overflow: hidden;
+            transition: 300ms;
+            transform: scale(1.11);
         }
     }
 
