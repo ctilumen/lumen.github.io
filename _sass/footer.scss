@@ -26,14 +26,16 @@
     a{
         color: #fff;
         text-decoration: none;
-        
-       &:hover, &:focus{
+    }
+
+      a:hover, a:focus{
+            content: "";
+            text-decoration: none;
             overflow: hidden;
+            background: white;
             transition: 300ms;
             transform: scale(1.11);
         }
-    }
-
 
 
       .mail {
