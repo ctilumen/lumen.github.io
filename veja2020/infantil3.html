@@ -5,37 +5,42 @@ permalink: /veja2020/infantil3
 ---
 
 <div class="gallery">
-    <ul class="row">
-        <li class="col-sm-4">
-           <a href="/veja2016/index.html" class="btn">Veja o que eu fiz 2016</a>
-      </li>
-      <li class="col-sm-4">
-           <a href="/veja/index.html" class="btn">Veja o que eu fiz 2017</a>
-      </li>
-      
-       </li>
-      <li class="col-sm-4">
-           <a href="/veja2018/index.html" class="btn">Veja o que eu fiz 2018</a>
-      </li>
-      
-     
-         <li class="col-sm-4">
-           <a href="/veja2019/index.html" class="btn">Veja o que eu fiz 2019</a>
-      </li>
-     
-     <li class="col-sm-4">
-           <a href="/veja2020/infantil1.html" class="btn">Veja o que eu fiz 2020</a>
-      </li>
+    <div class="SelecYear">
+            <select id="YearSelect">
+                <option value="0" disabled selected>Selecione o Ano desejado</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+        
+          <button class="byear" onclick="redirect()">Buscar</button>
+    </div>
+    
+    
+    <script> 
+        function redirect(){
+            var Year = document.getElementById('YearSelect').value
+            
+            if(Year == 2017){
+                window.location.href = "http://lumen.com.br/veja/";
+            }else if(Year > 2015 && Year < 2020){
+                window.location.href = "http://lumen.com.br/veja" + Year + "/";
+            }else if(Year >= 2020){
+                window.location.href = "http://lumen.com.br/veja" + Year + "/infantil0";
+            }
+            
+        }
+    </script>
 
 
 
-      <li class="col-sm-4">
-           <a href="/veja2021/infantil0.html" class="btn">Veja o que eu fiz 2021</a>
-      </li>
-     
-   </ul>
-   
-   <center><font color="blue"><h1>Veja o que eu fiz 2020!</h1></font></center>
+
+   <center><font class="vejaoquefiz">Veja o que eu fiz 2020!</font></center>
     <ul class="row veja-lista">
       <li>
             <a href="/veja2020/infantil0.html" class="btn">Infantil 0</a>
