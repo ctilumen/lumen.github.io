@@ -6,41 +6,43 @@ permalink: /veja2023/1ef
 
 <div class="gallery">
     <div class="SelecYear">
-            <select id="YearSelect">
-                <option value="0" disabled selected>Selecione o Ano desejado</option>
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-            </select>
-        
-          <button class="byear" onclick="redirect()">Buscar</button>
+        <select id="YearSelect">
+            <option value="0" disabled selected>Selecione o Ano desejado</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+        </select>
+
+        <button class="byear" onclick="redirect()">Buscar</button>
     </div>
-    
-    
-    <script> 
-        function redirect(){
+
+
+    <script>
+        function redirect() {
             var Year = document.getElementById('YearSelect').value
-            
-            if(Year == 2017){
+
+            if (Year == 2017) {
                 window.location.href = "http://lumen.com.br/veja/";
-            }else if(Year > 2015 && Year < 2020){
+            } else if (Year > 2015 && Year < 2020) {
                 window.location.href = "http://lumen.com.br/veja" + Year + "/";
-            }else if(Year >= 2020){
+            } else if (Year >= 2020) {
                 window.location.href = "http://lumen.com.br/veja" + Year + "/infantil0";
             }
-            
+
         }
     </script>
 
 
 
 
-   <center><font class="vejaoquefiz">Veja o que eu fiz 2023!</font></center>
+    <center>
+        <font class="vejaoquefiz">Veja o que eu fiz 2023!</font>
+    </center>
     <ul class="row veja-lista">
         <li>
             <a href="/veja2023/infantil0" class="btn">Infantil 0</a>
@@ -80,36 +82,52 @@ permalink: /veja2023/1ef
 
 
     <div class="display">
-        <h2 align="center"><font>1º EF</font></h2>
+        <h2 align="center">
+            <font>1º EF</font>
+        </h2>
         <ul>
             <li>
+                <a href="/veja2023/germinacao1"><img class="example-image" src="/galeria/germinacao1/1.jpeg">
+                    <p>
+                        1ª etapa “Boneco de alpiste” Germinação
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="/veja2023/germinacao2"><img class="example-image" src="/galeria/germinacao2/1.jpeg">
+                    <p>
+                        2ª etapa da germinação Observação e conclusão dos Bonecos
+                    </p>
+                </a>
+            </li>
+            <li>
                 <a href="/veja2023/carroelastico"><img class="example-image" src="/galeria/carroelastico/1.png">
-                <p>Carro elástico
-                </p>
+                    <p>Carro elástico
+                    </p>
                 </a>
             </li>
             <li>
                 <a href="/veja2023/indio"><img class="example-image" src="/galeria/indio/1.jpeg">
-                <p>Dia dos povos indígenas
-                </p>
+                    <p>Dia dos povos indígenas
+                    </p>
                 </a>
             </li>
             <li>
                 <a href="/veja2023/memoriaspalavras"><img class="example-image" src="/galeria/memoriaspalavras/1.png">
-                <p>Jogo memória das palavras
-                </p>
+                    <p>Jogo memória das palavras
+                    </p>
                 </a>
             </li>
             <li>
                 <a href="/veja2023/pista"><img class="example-image" src="/galeria/pista/1.jpeg">
-                <p>Pista de obstaculos
-                </p>
+                    <p>Pista de obstaculos
+                    </p>
                 </a>
             </li>
             <li>
                 <a href="/veja2023/caça5"><img class="example-image" src="/galeria/caça5/1.jpeg">
-                <p>Caça aos Ovos
-                </p>
+                    <p>Caça aos Ovos
+                    </p>
                 </a>
             </li>
             <li>
