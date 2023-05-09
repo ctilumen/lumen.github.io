@@ -1,15 +1,15 @@
-.footer{
+.footer {
     background: #0063b3;
     padding: 30px 0;
-    
 
 
 
-    @media (max-width: $xs){
+
+    @media (max-width: $xs) {
         padding-top: 0;
     }
-        
-    h3{
+
+    h3 {
         border-bottom: 1px solid #fff;
         color: #fff;
         font-size: 14px;
@@ -17,178 +17,180 @@
         margin: 0 0 15px;
         padding-bottom: 10px;
         text-transform: uppercase;
-        
-        @media (max-width: $xs){
+
+        @media (max-width: $xs) {
             margin-top: 30px;
         }
     }
-    
-    a{
+
+    a {
         color: #fff;
         text-decoration: none;
     }
 
-      a:hover, a:focus{
-            content: "";
-            text-decoration: none;
-            overflow: hidden;
-            background: white;
-            transition: 300ms;
-            transform: scale(1.11);
-        }
+    a:hover,
+    a:focus {
+        content: "";
+        text-decoration: underline;
+        overflow: hidden;
+        transition: 300ms;
+    }
 
 
-      .mail {
+    .mail {
         margin-top: -20px;
-      
-      a{
+
+        a {
             color: #fff;
             text-decoration: none;
-        
-         &:hover, &:focus{
-         border-top: #0063b3;
-         text-decoration: none;
-         color: #fff; 
-         background: #0063b3;
-                }
+
+            &:hover,
+            &:focus {
+                border-top: #0063b3;
+                text-decoration: none;
+                color: #fff;
+                background: #0063b3;
+            }
+        }
     }
-}
-    
-    ul{
+
+    ul {
         list-style: none;
         margin: 0;
         padding: 0;
     }
-    
-    li{
+
+    li {
         margin-bottom: 10px;
         font-weight: 100;
     }
-    
-   .social-footer{
+
+    .social-footer {
         margin-bottom: 15px;
-        
-        
-        a{
-            
-            
+
+
+        a {
+
+
             background: #0063b3;
             border-top: 0px solid #0063b3;
-            
-            
+
+
         }
-         svg{
-        
-        
-        background: #fff;
-        fill: #0063b3;
-        width: 35px;
-        height: 35px;
-        margin-left: 20px;
 
-        @media (max-width: 1200px) {
-             display: inline-block;
-             margin-left: 6px;
-         }
+        svg {
 
 
+            background: #fff;
+            fill: #0063b3;
+            width: 35px;
+            height: 35px;
+            margin-left: 20px;
 
-           @media (max-width: 1024px) {
-             display: inline-block;
-             margin-left: 12px;
-         }
-
-         
-
-
-           @media (max-width: 976px) {
-             display: inline-block;
-             margin-left: 48px;
-             width: 30px;
-             height: 30px;
-         }
+            @media (max-width: 1200px) {
+                display: inline-block;
+                margin-left: 6px;
+            }
 
 
 
-      
-        
-    @media (max-width: 768px) {
-             display: inline-block;
-             margin-left: 45px;
-         }
+            @media (max-width: 1024px) {
+                display: inline-block;
+                margin-left: 12px;
+            }
 
 
 
-         @media (max-width: 320px) {
-             display: inline-block;
-             margin-left: 33px;
-         }
-         
-        
-        
-        &:hover{
-            fill: #337ab7;
-            
+
+            @media (max-width: 976px) {
+                display: inline-block;
+                margin-left: 48px;
+                width: 30px;
+                height: 30px;
+            }
+
+
+
+
+
+            @media (max-width: 768px) {
+                display: inline-block;
+                margin-left: 45px;
+            }
+
+
+
+            @media (max-width: 320px) {
+                display: inline-block;
+                margin-left: 33px;
+            }
+
+
+
+            &:hover {
+                fill: #337ab7;
+
+            }
         }
     }
-}
 
 
 
 
-    
-    
-    
-.dropdown-content{
-    
-    a{
-        text-decoration: none;
-        color: #fff;
-        fill: #fff;
-        
-         &:hover, &:focus{
-         transition: all 200ms ease-out;
-         text-decoration: none;
-         color: #fff; 
-         background: #ff8c40;
-                }
+
+
+
+    .dropdown-content {
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            fill: #fff;
+
+            &:hover,
+            &:focus {
+                transition: all 200ms ease-out;
+                text-decoration: none;
+                color: #fff;
+                background: #ff8c40;
+            }
         }
-        
-    position: absolute;
-    background: #0063b3;
-    min-width: 270px;
-    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
-    padding: 5px 10px 5px;
-    z-index: 1;
-    
-    
 
-}    
-    
-    
-    .col-contact{
-        
-        li{
+        position: absolute;
+        background: #0063b3;
+        min-width: 270px;
+        box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 5px 10px 5px;
+        z-index: 1;
+
+
+
+    }
+
+
+    .col-contact {
+
+        li {
             color: #fff;
             margin-bottom: 20px;
-            
-            &:last-child{
+
+            &:last-child {
                 margin-bottom: 0;
             }
         }
-        
-        @media (max-width: $sm){
+
+        @media (max-width: $sm) {
             clear: left;
             margin-top: 30px;
-            
-            & + li{
+
+            &+li {
                 display: none;
             }
         }
     }
 }
 
-.copyright{
+.copyright {
     font-weight: lighter;
     color: #000;
     display: block;
@@ -204,28 +206,29 @@
 
 
 
-.menu-social-footer{
+.menu-social-footer {
     position: absolute;
     display: contents;
- 
-   
-    
-     a{
+
+
+
+    a {
         text-decoration: none;
         height: 30px;
         line-height: 30px;
 
 
-        &:hover, &:focus{
-         border-top: 3px solid #0063b3;
-         text-decoration: none;
-         color: #fff; 
-         background: #0063b3;
+        &:hover,
+        &:focus {
+            border-top: 3px solid #0063b3;
+            text-decoration: none;
+            color: #fff;
+            background: #0063b3;
         }
     }
-    
-    
- a .icon {
+
+
+    a .icon {
         display: inline-block;
         height: 30px;
         text-decoration: none;
@@ -233,34 +236,34 @@
         background: #0063b3;
         overflow: hidden;
         margin: 0 auto 0px;
-     
-     @media(max-width: 1024px){
-         margin-left: -4px;
-     }
-     
-     
-      @media(max-width: 768px){
-         margin-left: 25px;
-     }
-     
-     
-      @media(max-width: 425px){
-         margin-left: 30px;
-     }
-     
-     @media(max-width: 375px){
-         margin-left: 20px;
-     }
-     
-     
-     @media(max-width: 320px){
-         margin-left: 10px;
-     }
+
+        @media(max-width: 1024px) {
+            margin-left: -4px;
+        }
+
+
+        @media(max-width: 768px) {
+            margin-left: 25px;
+        }
+
+
+        @media(max-width: 425px) {
+            margin-left: 30px;
+        }
+
+        @media(max-width: 375px) {
+            margin-left: 20px;
+        }
+
+
+        @media(max-width: 320px) {
+            margin-left: 10px;
+        }
 
 
     }
-    
-  a .icon .fa{
+
+    a .icon .fa {
         width: 100%;
         text-decoration: none;
         height: 100%;
@@ -269,36 +272,38 @@
         font-size: 34px;
         transition: 0.5s;
         color: #fff;
-      
-   
+
+
     }
-    
-    
-  a .icon .fa:last-child{
+
+
+    a .icon .fa:last-child {
         display: inherit;
         margin-top: -10px;
         text-decoration: none;
         color: #ff6600;
     }
-    
-    
-    
-  a:hover .icon .fa{
-       text-decoration: none;
-       transform: translateY(-100%);
+
+
+
+    a:hover .icon .fa {
+        text-decoration: none;
+        transform: translateY(-100%);
     }
-    
-     a .name{
+
+    a .name {
         text-decoration: none;
         position: relative;
         height: 20px;
         width: 100%;
         display: block;
         overflow: hidden;
-    }//home
+    }
 
-    
-     a .icon .fa1{
+    //home
+
+
+    a .icon .fa1 {
         width: 100%;
         text-decoration: none;
         height: 100%;
@@ -311,15 +316,15 @@
         font-size: 31px;
         transition: 0.5s;
         color: transparent;
-         
-         
-  
+
+
+
 
     }
-    
 
-    
- a .icon .fa1:last-child{
+
+
+    a .icon .fa1:last-child {
         display: inline-block;
         text-decoration: none;
         background-image: url("/insta2.png");
@@ -329,24 +334,26 @@
         color: transparent;
         margin-top: -10px;
         line-height: 32px;
-  
-        
+
+
     }
-    
-    
-    
-    
-    
-    a:hover .icon .fa1{
-       text-decoration: none;
-       transform: translateY(-100%);
-    }//insta
-    
-    
-    
-    
-    
-      a .icon .fa2{
+
+
+
+
+
+    a:hover .icon .fa1 {
+        text-decoration: none;
+        transform: translateY(-100%);
+    }
+
+    //insta
+
+
+
+
+
+    a .icon .fa2 {
         width: 100%;
         text-decoration: none;
         height: 100%;
@@ -355,32 +362,34 @@
         font-size: 30px;
         transition: 0.5s;
         color: #fff;
-          
-    
-    }
-    
 
-    
- a .icon .fa2:last-child{
+
+    }
+
+
+
+    a .icon .fa2:last-child {
         margin-top: -10px;
         text-decoration: none;
         color: black;
         line-height: 32px;
-        
-        
+
+
     }
-    
-    
-      a:hover .icon .fa2{
-       text-decoration: none;
-       transform: translateY(-100%);
-    }//you
-    
-    
-    
-    
-    
-     a .icon .fa3{
+
+
+    a:hover .icon .fa2 {
+        text-decoration: none;
+        transform: translateY(-100%);
+    }
+
+    //you
+
+
+
+
+
+    a .icon .fa3 {
         width: 100%;
         text-decoration: none;
         height: 100%;
@@ -389,28 +398,30 @@
         font-size: 27px;
         transition: 0.5s;
         color: #fff;
-         
-       
-    }
-    
 
-    
-    a .icon .fa3:last-child{
+
+    }
+
+
+
+    a .icon .fa3:last-child {
         margin-top: -10px;
         text-decoration: none;
         color: blue;
         line-height: 32px;
-        
-        
+
+
     }
-    
-    
-      a:hover .icon .fa3{
-       text-decoration: none;
-       transform: translateY(-100%);
-    }//face
-    
-    
-    
-    
+
+
+    a:hover .icon .fa3 {
+        text-decoration: none;
+        transform: translateY(-100%);
+    }
+
+    //face
+
+
+
+
 }
