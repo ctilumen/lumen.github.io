@@ -131,15 +131,30 @@
             <li><a href="http://tvescola.mec.gov.br/tve/serie/hora-do-enem" target="_blank">Hora do ENEM</a></li>
             <li><a href="/pdf/tri.pdf" target="_blank">TRI – ENEM</a></li>
             <li><a href="/pdf/obras literárias.pdf" target="_blank">Lista de Obras Literárias</a></li>
-            <li><a href="/aprovados/2024">Lista de Aprovados 2024</a></li>
-            <li><a href="/aprovados/2023">Lista de Aprovados 2023</a></li>
-            <li><a href="/aprovados/2022">Lista de Aprovados 2022</a></li>
-            <li><a href="/aprovados/2021">Lista de Aprovados 2021</a></li>
-            <li><a href="/aprovados/2020">Lista de Aprovados 2020</a></li>
-            <li><a href="/aprovados/2019">Lista de Aprovados 2019</a></li>
-            <li><a href="/aprovados/2018">Lista de Aprovados 2018</a></li>
-            <li><a href="/aprovados/2017">Lista de Aprovados 2017</a></li>
-            <li><a href="/aprovados/2016">Lista de Aprovados 2016</a></li>
+             <div class="SelecYear">
+                                <select id="YearSelectd" onclick="redirect()">
+                                    <option value="0" disabled selected>Aprovados</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                </select>
+
+                                 <script>
+                                    function redirect() {
+                                        var Year = document.getElementById('YearSelectd').value
+
+                                        if (Year >= 2016) {
+                                            window.location.href = "http://lumen.com.br/aprovados/" + Year;
+                                        }
+                                    }
+                                </script>
+                            </div>
     </ul>
   </li>
    <li>
