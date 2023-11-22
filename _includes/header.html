@@ -103,7 +103,7 @@
                            <p><a href="/pdf/obras literárias.pdf" target="_blank">Lista de Obras Literárias</a></p>
 
                              <div class="SelecYear">
-                                <select id="YearSelectd" onclick="redirect()">
+                                <select id="Selectd" onclick="redirect()">
                                     <option value="0" disabled selected>Aprovados</option>
                                     <option value="2016">2016</option>
                                     <option value="2017">2017</option>
@@ -118,7 +118,7 @@
 
                                  <script>
                                     function redirect() {
-                                        var Year = document.getElementById('YearSelectd').value
+                                        var Year = document.getElementById('Selectd').value
 
                                         if (Year >= 2016) {
                                             window.location.href = "http://lumen.com.br/aprovados/" + Year;
