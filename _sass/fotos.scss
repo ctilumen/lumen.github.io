@@ -387,16 +387,20 @@ color: #fff;
 
 
 .btn-download-all {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #28a745;
+    display: block;
     color: white;
+    font-weight: bold;
     text-decoration: none;
-    border-radius: 5px;
+    width: 70px;
+    border-radius: 15px;
+    transition: all .2s;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #0063b3;
     margin-bottom: 20px;
     }
 
-    
+
 
 .arquivocor{
     font-weight: bold;
