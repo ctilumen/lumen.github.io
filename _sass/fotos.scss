@@ -387,6 +387,9 @@ color: #fff;
 
 
 .btn-download-all {
+    display: flex;
+    width: 200px;
+    justify-self: end;
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -398,8 +401,10 @@ color: #fff;
     margin-bottom: 20px;
     }
 .btn-download-all:hover{
+    color: white;
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
 }
 
 
