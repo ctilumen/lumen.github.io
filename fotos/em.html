@@ -7,17 +7,22 @@ permalink: /fotos/em
 <div class="gallery">
 
 
-<div class="SelecYear">
-            <input type="search" id="pesquisa" placeholder="Digite para pesquisar...">
+
+<div class="display">
+
+
+
+<div class="buscaName">
+            <input type="search" id="search" placeholder="Digite para pesquisar...">
 </div>
 
     <script type="text/javascript">
 
         const onSearch = () => {
 
-            const input = document.querySelector("#pesquisa");
+            const input = document.querySelector("#search");
             const filter = input.value.toUpperCase();
-            const list = document.querySelectorAll("#list li");
+            const list = document.querySelectorAll("#list li p");
 
             list.forEach((el) => {
             const tex = el.textContent.toUpperCase();
@@ -30,11 +35,7 @@ permalink: /fotos/em
     </script>
 
 
-
-
-
-<div class="display">
-    
+        
 <ul id="list">
 
     <li>
