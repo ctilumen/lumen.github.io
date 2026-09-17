@@ -7,11 +7,36 @@ permalink: /fotos/em
 <div class="gallery">
 
 
+<div class="SelecYear">
+            <input type="search" id="pesquisa" placeholder="Digite para pesquisar...">
+</div>
+
+    <script>
+       const inputPesquisa = document.getElementById('pesquisa');
+            const itensLista = document.querySelectorAll('#lista li');
+
+            inputPesquisa.addEventListener('input', (e) => {
+              const termo = e.target.value.toLowerCase(); // Converte para minúsculas
+
+              itensLista.forEach(item => {
+                const texto = item.textContent.toLowerCase();
+                
+                if (texto.includes(termo)) {
+                  item.style.display = 'block'; // Mostra o item
+                } else {
+                  item.style.display = 'none';  // Oculta o item
+                }
+              });
+            });
+    </script>
+
+
+
 
 
 <div class="display">
     
-<ul>
+<ul id="lista">
 
     <li>
                 <a href="https://photos.app.goo.gl/cQG84zPjBVMQuZdf8" target="_blank"><img class="example-image" src="/galeria/2026/ef2/7.jpeg">
