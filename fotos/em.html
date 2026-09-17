@@ -12,31 +12,40 @@ permalink: /fotos/em
 
 
 
-<div class="buscaName">
-            <input type="search" id="search" placeholder="Digite para pesquisar...">
-</div>
+<input type="text" id="myInput" onkeyup="search()" placeholder="Digita para buscar..." title="Type in a name" class="buscaName">
 
-    <script type="text/javascript">
 
-        const onSearch = () => {
 
-            const input = document.querySelector("#search");
-            const filter = input.value.toUpperCase();
-            const list = document.querySelectorAll("#list li p");
-
-            list.forEach((el) => {
-            const tex = el.textContent.toUpperCase();
-            el.style.display = text.includes(filter) ? "" : "none";
-            });
+<script>
+function search() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1 || li[i].className.indexOf("alwaysshow") > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
         }
+    }
+}
+    
+function show() {    
+   var a = document.getElementById("show_content");
+    if(a.style.display== "none"){
+      a.style.display = "";  
+    }else{
+       a.style.display = "none";
+    }
+}
+</script>
 
-        document.querySelector("#pesquisa").addEventListener("input", onSearch);
 
-    </script>
-
-
-        
-<ul id="list">
+<ul id="myUL">
 
     <li>
                 <a href="https://photos.app.goo.gl/cQG84zPjBVMQuZdf8" target="_blank"><img class="example-image" src="/galeria/2026/ef2/7.jpeg">
